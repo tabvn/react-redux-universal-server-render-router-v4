@@ -1,0 +1,38 @@
+{
+  "name": "React",
+  "version": "0.0.0",
+  "description": "React Appliaction",
+  "author": "",
+  "scripts": {
+    "start": "webpack && node server.js",
+    "dev": "npm-run-all --parallel watch:*",
+    "watch:webpack": "webpack -w",
+    "watch:server": "nodemon --ext js,jsx --ignore public/ server.js"
+  },
+  "main": "server.js",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "express": "^4.13.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^4.4.8",
+    "react-router-config": "^1.0.0-beta.3",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "webpack": "^1.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^3.1.2"
+  },
+  "private": true,
+  "license": "MIT"
+}
